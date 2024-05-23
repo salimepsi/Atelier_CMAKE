@@ -14,6 +14,7 @@ int main(int argc, char *argv[]){
 		r = _add(atof(a), atof(b));
 		printf("%lf",r);
 	}
+
 	else if (strcmp(op, "sub") == 0) {
 		r = _sub(atof(a), atof(b));
 		printf("%lf",r);
@@ -24,6 +25,10 @@ int main(int argc, char *argv[]){
 	}
 	else if (strcmp(op, "div") == 0) {
 		r = _div(atof(a), atof(b));
+		printf("%lf",r);
+	}
+	else if (strcmp(op, "carré") == 0) {
+		r = _mul(atof(a), atof(a));
 		printf("%lf",r);
 	}
 	else {printf("Erreur de parametres");}
